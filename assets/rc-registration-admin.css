@@ -1,0 +1,161 @@
+/* registrations page */
+table.registrations {
+    table-layout: auto;
+}
+
+table.registrations td.column-group {
+    max-width: 100px;
+}
+
+input[name^="rc_group"] {
+    width: 100%;
+    font-size: small;
+}
+
+/* ajax on registrations and waitlist pages */
+.rc_group_wrapper, .rc-update-stock-wrapper {
+    position: relative;
+}
+
+.rc_group_wrapper::before, .rc-update-stock-wrapper::before {
+    content: '';
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 100%;
+    margin: 7px 5px 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rc_group_wrapper.success::before, .rc-update-stock-wrapper.success::before {
+    content: '\2713';
+    color: #0bd30b;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.rc_group_wrapper.failure::before, .rc-update-stock-wrapper.failure::before {
+    content: '\d7';
+    color: #d30b0b;
+    font-size: 22px;
+    line-height: 13px;
+}
+
+.rc_group_wrapper.sending::before, .rc-update-stock-wrapper.sending::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.0' width='16px' height='16px' viewBox='0 0 128 128'%3E%3Cg%3E%3Cpath fill='%23000' d='M109.25 55.5h-36l12-12a29.54 29.54 0 0 0-49.53 12H18.75A46.04 46.04 0 0 1 96.9 31.84l12.35-12.34v36zm-90.5 17h36l-12 12a29.54 29.54 0 0 0 49.53-12h16.97A46.04 46.04 0 0 1 31.1 96.16L18.74 108.5v-36z'/%3E%3CanimateTransform attributeName='transform' type='rotate' from='0 64 64' to='360 64 64' dur='1040ms' repeatCount='indefinite'%3E%3C/animateTransform%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* waitlist page */
+.rc-stock-table {
+    border-collapse: collapse;
+}
+
+.rc-stock-table th, .rc-stock-table td {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+
+.rc-stock-table th {
+    font-size: 14px;
+    background: #ddd;
+    font-weight: 500;
+}
+
+.rc-stock-table span {
+    font-size: 13px;
+    color: #999;
+    display: block;
+}
+
+.rc-waitlists-page #wcwl_waitlist_data {
+    display: block;
+}
+
+.rc-waitlists-page .wcwl_header_wrap {
+    padding: 0;
+}
+
+.rc-waitlists-page .wcwl_header_wrap {
+    background: #d8d8d8;
+    padding: 10px 10px;
+    border-bottom: 0;
+    margin: 3px 0 0;
+}
+
+.rc-waitlists-page .wcwl_header_wrap h3 {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.rc-waitlists-page .wcwl_body_wrap {
+    background: #fff;
+}
+
+.rc-waitlists-page .wcwl_header_wrap h3 span {
+    font-weight: 400;
+    font-size: 1em;
+    position: absolute;
+    left: 10em;
+}
+
+.rc-waitlists-page .inventory.wcwl_tab_content p {
+    margin-top: 0;
+}
+
+.rc-waitlists-page .rc-update-stock-wrapper {
+    width: 13em;
+    margin-bottom: 1.5em;
+}
+
+.rc-waitlists-page .rc-update-stock-wrapper::before {
+    right: auto;
+    left: 100%;
+    margin-top: 12px;
+}
+
+.rc-waitlists-page .wc_input_stock {
+    width: 70px;
+}
+
+/* settings page */
+.rc-settings-form h2 {
+    background: #d8d8d8;
+    padding: 10px 20px;
+}
+
+.rc-settings-form td p {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+    .rc-settings-meets {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rc-settings-meets > div {
+        flex: 0 1 48%;
+    }
+}
+
+.rc-settings-meets input {
+    width: 100%;
+}
+
+.rc-settings-form textarea {
+    height: 130px;
+    width: 100%;
+}
+/* gl start */
+/* shortcode settings page */
+.rc-dy_shortcodes-form h2 {
+    background: #d8d8d8 !important;
+    padding: 10px 20px !important;
+}
+
+/* gl end */

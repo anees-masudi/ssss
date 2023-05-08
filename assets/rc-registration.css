@@ -1,0 +1,401 @@
+.woocommerce-error p:last-child, .woocommerce-info p:last-child, .woocommerce-message p:last-child {
+    margin-bottom: 0;
+}
+.woocommerce-message::before {
+    font-size: inherit;
+}
+
+/* SINGLE PRODUCT PAGE */
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+    float: none;
+    width: auto;
+}
+
+.woocommerce div.product, .woocommerce-notices-wrapper {
+    clear: both;
+}
+
+.rc-view-cart-link {
+    font-size: inherit;
+    margin-top: 20px;
+}
+
+.rc-view-cart-link a {
+    color: #2b85da;
+}
+
+.rc-view-cart-link a:hover {
+    text-decoration: none;
+    border: 0;
+}
+
+.woocommerce div.product form.cart .variations {
+    max-width: 55.5em;
+}
+
+.woocommerce div.product form.cart .variations td.label {
+    padding-right: 1em;
+    width: 13em;
+}
+
+.rc-registration-fields {
+    max-width: 50em;
+    margin: 40px 0;
+    display: none;
+}
+
+.rc-field {
+    margin: 20px 0;
+    color: #666;
+}
+
+.rc-field > label {
+    font-weight: bold;
+}
+
+.rc-field input:not([type=radio]), .rc-field textarea, .rc-field select {
+    font-weight: 400;
+    padding: 10px 20px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    width: 100%;
+    color: inherit;
+    font-size: inherit;
+}
+
+.rc-field-name {
+    display: flex;
+}
+
+.rc-field-name label {
+    flex: 0 1 49%;
+}
+
+.rc-field-name label:first-child {
+    margin-right: 2%;
+}
+
+.rc-field-name span {
+    font-size: small;
+    display: block;
+    margin: 5px 0 0 20px;
+}
+
+.rc-field-attended label {
+    padding: 10px 10px;
+    margin: 0 0 0 20px;
+    display: inline-block;
+}
+
+.rc-field-attended label:hover, .rc-field-attended label input:hover {
+    cursor: pointer;
+}
+
+.ui-datepicker select {
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance: menulist;
+    padding: 0;
+}
+
+.rc-field textarea {
+    height: 100px;
+}
+
+@media (min-width: 600px) {
+    .rc-field-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rc-field-columns .rc-field {
+        flex: 0 1 49%;
+    }
+}
+
+.woocommerce div.product form.cart .button {
+    background: #5784ad !important;
+    padding: 20px;
+    width: calc(50% - 5px);
+    margin: 10px 0 20px;
+    border: 0 !important;
+    line-height: 1.2em;
+}
+
+.woocommerce div.product form.cart button.cancel-edit {
+    margin-right: 10px;
+    background: #888 !important;
+}
+
+.woocommerce div.product form.cart button.single_add_to_cart_button[value] {
+    margin-right: 10px;
+    background: #77a464 !important;
+}
+
+@media (max-width: 599px) {
+    .woocommerce div.product form.cart button.single_add_to_cart_button.alt {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.woocommerce div.product form.cart .single_add_to_cart_button:hover {
+    filter: brightness(1.05)
+}
+
+div.woocommerce form .form-row .required {
+    visibility: visible;
+}
+
+.rc-registration-fields .required {
+    color: #f00;
+    border: 0 !important;
+    text-decoration: none;
+}
+
+/* camp availability section */
+.woocommerce-variation-availability {
+    margin: 30px 0;
+}
+
+.woocommerce-variation-availability:before {
+    content: "Camp Availability:";
+    font-weight: bold;
+    color: #666;
+}
+
+.woocommerce div.product .woocommerce-variation-availability .stock {
+    margin: 0;
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.woocommerce-variation-availability .stock::before {
+    content: '\2713';
+    display: inline-block;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.woocommerce-variation-availability .stock.out-of-stock::before {
+    content: '\d7';
+    padding: 0 6px 0 3px;
+}
+
+.woocommerce-variation-availability .wcwl_elements {
+    margin: 40px 0 20px;
+    padding: 30px 40px 20px;
+    max-width: 50em;
+    background: #eee;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.woocommerce-variation-availability .wcwl_elements p {
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.woocommerce-variation-availability .wcwl_elements input[type=email] {
+    margin: 20px 0 20px;
+    font-weight: 400;
+    padding: 10px 20px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.woocommerce-variation-availability div.wcwl_elements button.woocommerce_waitlist.button {
+    float: none;
+    width: 100%;
+    background: #77a464 !important;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* CART PAGE */
+.product-thumbnail, .product-quantity, .product-subtotal {
+    display: none;
+}
+
+.woocommerce .product-name a:not(:hover) {
+    color: #a5c02f;
+    text-decoration: underline;
+}
+
+.woocommerce .product-name a:hover {
+    border: 0;
+}
+
+dl.variation {
+    margin: 0;
+    font-size: 16px;
+}
+
+dl.variation p, .wc-item-meta p {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+dl.variation dt, .wc-item-meta-label {
+    font-weight: 500;
+}
+
+.woocommerce td.product-name dl.rc-registration-meta {
+    margin: 10px 0 0;
+}
+
+.woocommerce td.product-name dl.rc-registration-meta dt {
+    float: left;
+    clear: both;
+    margin-right: .25em;
+    display: inline-block;
+    list-style: none outside;
+}
+
+.woocommerce td.product-name dl.rc-registration-meta dd {
+    margin: 0;
+    font-weight: 300;
+}
+
+.woocommerce .product-price del {
+    color: #888;
+}
+
+.woocommerce .product-price ins {
+    background: none;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals table th {
+    width: 50%;
+    text-transform: none;
+}
+
+.woocommerce a.button.checkout-button {
+    background-color: #a46497 !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+
+.woocommerce a.button.checkout-button:hover {
+    background-color: #c169af !important;
+}
+
+.woocommerce-cart #content table.cart td.actions .coupon .input-text {
+    width: 140px;
+    padding: 9px 5px;
+    font-size: 16px;
+}
+
+.rc-edit-cart-item {
+    font-size: small;
+}
+
+.rc-edit-cart-item.hidden {
+    display: none;
+}
+
+/* CHECKOUT PAGE */
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+    background-color: #77a464 !important;
+    color: #fff !important;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.woocommerce #payment #place_order:hover, .woocommerce-page #payment #place_order:hover {
+    background: #74ae5b !important;
+}
+
+.wc-item-meta {
+    margin: 5px 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#order_comments {
+    background: #f7f7f7 !important;
+    border: 1px solid #ccc !important;
+    color: #666;
+    padding: 5px 10px;
+}
+
+.woocommerce-additional-fields div .form-row-first {
+    width: auto;
+    float: none;
+}
+
+.woocommerce .woocommerce-checkout input, .woocommerce .woocommerce-checkout select, .woocommerce .woocommerce-checkout textarea {
+    font-family: inherit !important;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.select2-container--default .select2-selection--single {
+    background: #f7f7f7 !important;
+    border: 1px solid #ccc !important;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.woocommerce-additional-fields fieldset {
+    border: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.woocommerce-additional-fields legend {
+    font-size: 22px;
+    font-weight: 300;
+    color: #555;
+}
+
+#terms_of_service_field legend {
+    padding-top: 25px;
+    color: #000;
+    font-size: 16px;
+}
+/* User Dashboard  */
+
+#settingIframe #wpadminbar, #settingIframe #adminmenuback, #settingIframe #adminmenuwrap, #settingIframe #contextual-help-link {
+	display: none !important;
+}
+
+/* order received page */
+.woocommerce-table--order-details + dl, .woocommerce-customer-details address + dl {
+    display: none;
+}
+
+.woocommerce-customer-details p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.woocommerce-customer-details--phone {
+    margin-top: 15px;
+}
+
+/* MY ACCOUNT */
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+    background: #eee;
+}
+
+.rc-event-signup-form {
+    margin-bottom: 40px;
+}
+
+.rc-event-signup-form label {
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    .rc-meet-cols {
+        display: flex;
+        margin: 0 0 1em;
+    }
+
+    .rc-meet-col {
+        flex: 1 1 50%;
+    }
+}

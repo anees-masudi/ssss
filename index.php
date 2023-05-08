@@ -1,0 +1,3 @@
+<?php
+
+// lost the game
